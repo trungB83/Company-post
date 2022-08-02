@@ -40,8 +40,8 @@ a:hover {
 }
 
 .wide {
-  width: 1200px;
-  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .inline {

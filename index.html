@@ -15,6 +15,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/responsive-base.css" />
   </head>
   <body>
     <!-- header -->
@@ -22,9 +23,11 @@
       <div class="wide">
         <div class="header__container">
           <div class="header__logo">
-            <img src="./imgs/logo.png" alt="" class="header__logo-img" />
+            <a href="">
+              <img src="./imgs/logo.png" alt="" class="header__logo-img" />
+            </a>
           </div>
-          <div class="header__navigation">
+          <div class="header__navigation hide-tablet">
             <div class="header__nav-item">
               <a href="" class="header__nav-link">About Us</a>
             </div>
@@ -39,6 +42,24 @@
             </div>
             <div class="header__nav-item">
               <a href="" class="header__nav-link nav-active">Contact Us</a>
+            </div>
+          </div>
+          <div class="header__navigation-mobile">
+            <div class="dropdown">
+              <input type="checkbox" id="checkbox_toggle">
+              <label for="checkbox_toggle" class="hamburger">
+                <i class="checkbox_icon fa-solid fa-bars"></i>
+               </label>
+              <nav>
+                <ul>
+                  <li class="main__list-mobile-item"><a href="">Design</a></li>
+                  <li class="main__list-mobile-item"><a href="">Brainding</a></li>
+                  <li class="main__list-mobile-item"><a href="">Illustrations</a></li>
+                  <li class="main__list-mobile-item"><a href="">Icons</a></li>
+                  <li class="main__list-mobile-item"><a href="">Themes</a></li>
+              </ul>
+                </nav>
+            </div>
             </div>
           </div>
         </div>
@@ -60,26 +81,34 @@
           <div class="main__container">
             <div class="main__navigation">
               <ul class="main__list">
-                <li class="main__list-item nav-main-active">All</li>
-                <li class="main__list-item">Design</li>
-                <li class="main__list-item">Design</li>
-                <li class="main__list-item">Brainding</li>
-                <li class="main__list-item">Illustrations</li>
-                <li class="main__list-item">Icons</li>
-                <li class="main__list-item">Themes</li>
+                <li class="main__list-item nav-main-active">
+                  <a href="">All</a>
+                </li>
+                <li class="main__list-item"><a href="">Design</a></li>
+                <li class="main__list-item"><a href="">Design</a></li>
+                <li class="main__list-item"><a href="">Brainding</a></li>
+                <li class="main__list-item"><a href="">Illustrations</a></li>
+                <li class="main__list-item"><a href="">Icons</a></li>
+                <li class="main__list-item"><a href="">Themes</a></li>
               </ul>
             </div>
             <div class="block-main-post">
               <div class="post__list flex">
-                <div class="post__box">
+                <div class="post__box col-sm-6 col-s-6 col-4">
                   <div class="post__image">
-                    <img src="./imgs/p1.png" alt="post__img" />
+                    <a href="">
+                      <a href=""><img src="./imgs/p1.png" alt="post__img" /></a>
+                    </a>
                   </div>
                   <div class="post__category flex">
-                    <div class="post__category-name">marketing</div>
-                    <div class="post__time-read">5min Read</div>
+                    <div class="post__category-name">
+                      <a href="">marketing</a>
+                    </div>
+                    <div class="post__time-read hide-mobile">5min Read</div>
                   </div>
-                  <div class="post__title">dolor sit amet, con</div>
+                  <div class="post__title">
+                    <a href=""> Dolor sit amet, con</a>
+                  </div>
                   <div class="post__description">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Perspiciatis ut, dolor illo tenetur, similique, praesentium
@@ -93,15 +122,19 @@
                     <p>FEATURED</p>
                   </div>
                 </div>
-                <div class="post__box">
+                <div class="post__box col-sm-6 col-s-6 col-4">
                   <div class="post__image">
-                    <img src="./imgs/p1.png" alt="post__img" />
+                    <a href=""> <img src="./imgs/p1.png" alt="post__img" /> </a>
                   </div>
                   <div class="post__category flex">
-                    <div class="post__category-name">marketing</div>
-                    <div class="post__time-read">5min Read</div>
+                    <div class="post__category-name">
+                      <a href="">marketing</a>
+                    </div>
+                    <div class="post__time-read hide-mobile">5min Read</div>
                   </div>
-                  <div class="post__title">dolor sit amet, con</div>
+                  <div class="post__title">
+                    <a href=""> Dolor sit amet, con</a>
+                  </div>
                   <div class="post__description">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Perspiciatis ut, dolor illo tenetur, similique, praesentium
@@ -115,20 +148,24 @@
                     <p>FEATURED</p>
                   </div>
                 </div>
-                <div class="post__box">
+                <div class="post__box col-sm-6 col-s-6 col-4">
                   <div class="post__image">
-                    <img src="./imgs/p2.png" alt="img" />
+                    <a href=""> <img src="./imgs/p1.png" alt="post__img" /> </a>
                   </div>
                   <div class="post__category flex">
-                    <div class="post__category-name">marketing</div>
-                    <div class="post__time-read">5min Read</div>
+                    <div class="post__category-name">
+                      <a href="">marketing</a>
+                    </div>
+                    <div class="post__time-read hide-mobile">5min Read</div>
                   </div>
-                  <div class="post__title">dolor sit amet, con</div>
+                  <div class="post__title">
+                    <a href=""> Dolor sit amet, con</a>
+                  </div>
                   <div class="post__description">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Perspiciatis ut, dolor illo tenetur, similique, praesentium
                     omnis natus fuga perferendis nobis cum consectetur porro.
-                    Assumenda aspernatur ad expedita, ducimus a ab?dnasodnoasdn
+                    Assumenda aspernatur ad expedita, ducimus a ab?
                   </div>
                   <div class="post__btn">
                     <a href="">Read full article</a>
@@ -137,15 +174,19 @@
                     <p>FEATURED</p>
                   </div>
                 </div>
-                <div class="post__box">
+                <div class="post__box col-sm-6 col-s-6 col-4">
                   <div class="post__image">
-                    <img src="./imgs/p2.png" alt="img" />
+                    <a href=""> <img src="./imgs/p3.png" alt="img" /> </a>
                   </div>
                   <div class="post__category flex">
-                    <div class="post__category-name">marketing</div>
-                    <div class="post__time-read">5min Read</div>
+                    <div class="post__category-name">
+                      <a href="">marketing</a>
+                    </div>
+                    <div class="post__time-read hide-mobile">5min Read</div>
                   </div>
-                  <div class="post__title">dolor sit amet, con</div>
+                  <div class="post__title">
+                    <a href=""> Dolor sit amet, con</a>
+                  </div>
                   <div class="post__description">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Perspiciatis ut, dolor illo tenetur, similique, praesentium
@@ -159,15 +200,19 @@
                     <p>FEATURED</p>
                   </div>
                 </div>
-                <div class="post__box">
+                <div class="post__box col-sm-6 col-s-6 col-4">
                   <div class="post__image">
-                    <img src="./imgs/p3.png" alt="img" />
+                    <a href=""> <img src="./imgs/p3.png" alt="img" /> </a>
                   </div>
                   <div class="post__category flex">
-                    <div class="post__category-name">marketing</div>
-                    <div class="post__time-read">5min Read</div>
+                    <div class="post__category-name">
+                      <a href="">marketing</a>
+                    </div>
+                    <div class="post__time-read hide-mobile">5min Read</div>
                   </div>
-                  <div class="post__title">dolor sit amet, con</div>
+                  <div class="post__title">
+                    <a href=""> Dolor sit amet, con</a>
+                  </div>
                   <div class="post__description">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Perspiciatis ut, dolor illo tenetur, similique, praesentium
@@ -181,15 +226,19 @@
                     <p>FEATURED</p>
                   </div>
                 </div>
-                <div class="post__box">
+                <div class="post__box col-sm-6 col-s-6 col-4">
                   <div class="post__image">
-                    <img src="./imgs/p3.png" alt="img" />
+                    <a href=""> <img src="./imgs/p3.png" alt="img" /> </a>
                   </div>
                   <div class="post__category flex">
-                    <div class="post__category-name">marketing</div>
-                    <div class="post__time-read">5min Read</div>
+                    <div class="post__category-name">
+                      <a href="">marketing</a>
+                    </div>
+                    <div class="post__time-read hide-mobile">5min Read</div>
                   </div>
-                  <div class="post__title">dolor sit amet, con</div>
+                  <div class="post__title">
+                    <a href=""> Dolor sit amet, con</a>
+                  </div>
                   <div class="post__description">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Perspiciatis ut, dolor illo tenetur, similique, praesentium
@@ -244,15 +293,19 @@
           <div class="main__container">
             <div class="block-main-post">
               <div class="post__list flex">
-                <div class="post__box">
+                <div class="post__box col-sm-6 col-s-6 col-4">
                   <div class="post__image">
-                    <img src="./imgs/p4.png" alt="post__img" />
+                    <a href=""> <img src="./imgs/p4.png" alt="post__img" /> </a>
                   </div>
                   <div class="post__category flex">
-                    <div class="post__category-name">marketing</div>
-                    <div class="post__time-read">5min Read</div>
+                    <div class="post__category-name">
+                      <a href="">marketing</a>
+                    </div>
+                    <div class="post__time-read hide-mobile">5min Read</div>
                   </div>
-                  <div class="post__title">dolor sit amet, con</div>
+                  <div class="post__title">
+                    <a href=""> Dolor sit amet, con</a>
+                  </div>
                   <div class="post__description">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Perspiciatis ut, dolor illo tenetur, similique, praesentium
@@ -262,19 +315,23 @@
                   <div class="post__btn">
                     <a href="">Read full article</a>
                   </div>
-                  <div class="post__feature ">
+                  <div class="post__feature">
                     <p>FEATURED</p>
                   </div>
                 </div>
-                <div class="post__box">
+                <div class="post__box col-sm-6 col-s-6 col-4">
                   <div class="post__image">
-                    <img src="./imgs/p4.png" alt="post__img" />
+                    <a href=""> <img src="./imgs/p4.png" alt="post__img" /> </a>
                   </div>
                   <div class="post__category flex">
-                    <div class="post__category-name">marketing</div>
-                    <div class="post__time-read">5min Read</div>
+                    <div class="post__category-name">
+                      <a href="">marketing</a>
+                    </div>
+                    <div class="post__time-read hide-mobile">5min Read</div>
                   </div>
-                  <div class="post__title">dolor sit amet, con</div>
+                  <div class="post__title">
+                    <a href=""> Dolor sit amet, con</a>
+                  </div>
                   <div class="post__description">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Perspiciatis ut, dolor illo tenetur, similique, praesentium
@@ -288,37 +345,19 @@
                     <p>FEATURED</p>
                   </div>
                 </div>
-                <div class="post__box">
+                <div class="post__box col-sm-6 col-s-6 col-4">
                   <div class="post__image">
-                    <img src="./imgs/p5.png" alt="img" />
+                    <a href=""> <img src="./imgs/p5.png" alt="img" /> </a>
                   </div>
                   <div class="post__category flex">
-                    <div class="post__category-name">marketing</div>
-                    <div class="post__time-read">5min Read</div>
+                    <div class="post__category-name">
+                      <a href="">marketing</a>
+                    </div>
+                    <div class="post__time-read hide-mobile">5min Read</div>
                   </div>
-                  <div class="post__title">dolor sit amet, con</div>
-                  <div class="post__description">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Perspiciatis ut, dolor illo tenetur, similique, praesentium
-                    omnis natus fuga perferendis nobis cum consectetur porro.
-                    Assumenda aspernatur ad expedita, ducimus a ab?dnasodnoasdn
+                  <div class="post__title">
+                    <a href=""> Dolor sit amet, con</a>
                   </div>
-                  <div class="post__btn">
-                    <a href="">Read full article</a>
-                  </div>
-                  <div class="post__feature ">
-                    <p>FEATURED</p>
-                  </div>
-                </div>
-                <div class="post__box">
-                  <div class="post__image">
-                    <img src="./imgs/p6.png" alt="img" />
-                  </div>
-                  <div class="post__category flex">
-                    <div class="post__category-name">marketing</div>
-                    <div class="post__time-read">5min Read</div>
-                  </div>
-                  <div class="post__title">dolor sit amet, con</div>
                   <div class="post__description">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Perspiciatis ut, dolor illo tenetur, similique, praesentium
@@ -332,15 +371,19 @@
                     <p>FEATURED</p>
                   </div>
                 </div>
-                <div class="post__box">
+                <div class="post__box col-sm-6 col-s-6 col-4">
                   <div class="post__image">
-                    <img src="./imgs/p7.png" alt="img" />
+                    <a href=""> <img src="./imgs/p6.png" alt="img" /> </a>
                   </div>
                   <div class="post__category flex">
-                    <div class="post__category-name">marketing</div>
-                    <div class="post__time-read">5min Read</div>
+                    <div class="post__category-name">
+                      <a href="">marketing</a>
+                    </div>
+                    <div class="post__time-read hide-mobile">5min Read</div>
                   </div>
-                  <div class="post__title">dolor sit amet, con</div>
+                  <div class="post__title">
+                    <a href=""> Dolor sit amet, con</a>
+                  </div>
                   <div class="post__description">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Perspiciatis ut, dolor illo tenetur, similique, praesentium
@@ -354,15 +397,45 @@
                     <p>FEATURED</p>
                   </div>
                 </div>
-                <div class="post__box">
+                <div class="post__box col-sm-6 col-s-6 col-4">
                   <div class="post__image">
-                    <img src="./imgs/p2.png" alt="img" />
+                    <a href=""> <img src="./imgs/p7.png" alt="img" /> </a>
                   </div>
                   <div class="post__category flex">
-                    <div class="post__category-name">marketing</div>
-                    <div class="post__time-read">5min Read</div>
+                    <div class="post__category-name">
+                      <a href="">marketing</a>
+                    </div>
+                    <div class="post__time-read hide-mobile">5min Read</div>
                   </div>
-                  <div class="post__title">dolor sit amet, con</div>
+                  <div class="post__title">
+                    <a href=""> Dolor sit amet, con</a>
+                  </div>
+                  <div class="post__description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Perspiciatis ut, dolor illo tenetur, similique, praesentium
+                    omnis natus fuga perferendis nobis cum consectetur porro.
+                    Assumenda aspernatur ad expedita, ducimus a ab?dnasodnoasdn
+                  </div>
+                  <div class="post__btn">
+                    <a href="">Read full article</a>
+                  </div>
+                  <div class="post__feature">
+                    <p>FEATURED</p>
+                  </div>
+                </div>
+                <div class="post__box col-sm-6 col-s-6 col-4">
+                  <div class="post__image">
+                    <a href=""> <img src="./imgs/p2.png" alt="img" /> </a>
+                  </div>
+                  <div class="post__category flex">
+                    <div class="post__category-name">
+                      <a href="">marketing</a>
+                    </div>
+                    <div class="post__time-read hide-mobile">5min Read</div>
+                  </div>
+                  <div class="post__title">
+                    <a href=""> Dolor sit amet, con</a>
+                  </div>
                   <div class="post__description">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Perspiciatis ut, dolor illo tenetur, similique, praesentium
@@ -408,39 +481,37 @@
           </div>
         </div>
       </div>
-      <div class="drop-box">
-        <div class="wide">
-          <div class="drop-box__container">
-            <div class="drop-box__text">
-              <div class="drop-box__title">Drop us a line!</div>
-              <div class="drop-box__subtitle">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                temporibus sit eaque impedit dignissimos ipsam assumenda, non,
-                quae reiciendis ipsa alias animi nesciunt quas. Deserunt facilis
-                sint fuga ex impedit.
-              </div>
-            </div>
-            <div class="drop-box__btn">
-              <div class="post__btn">
-                <a href="">Contact Us</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
     <!-- footer -->
     <footer class="footer">
       <div class="wide">
         <div class="footer__container">
-          <div class="footer__menu">
+          <div class="drop-box">
+            <div class="drop-box__container">
+              <div class="drop-box__text">
+                <div class="drop-box__title">Drop us a line!</div>
+                <div class="drop-box__subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                  temporibus sit eaque impedit dignissimos ipsam assumenda, non,
+                  quae reiciendis ipsa alias animi nesciunt quas. Deserunt
+                  facilis sint fuga ex impedit.
+                </div>
+              </div>
+              <div class="drop-box__btn">
+                <div class="post__btn">
+                  <a href="">Contact Us</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__menu col-sm-6">
             <h3 class="footer__menu-title">Contact Us</h3>
             <ul class="footer__list">
               <li class="footer__item">hello@company.com</li>
               <li class="footer__item">+1 987 654 3210</li>
             </ul>
           </div>
-          <div class="footer__menu">
+          <div class="footer__menu col-sm-6">
             <h3 class="footer__menu-title">Links</h3>
             <ul class="footer__list">
               <li class="footer__item">
@@ -454,7 +525,7 @@
               </li>
             </ul>
           </div>
-          <div class="footer__menu">
+          <div class="footer__menu col-sm-6">
             <h3 class="footer__menu-title">Products</h3>
             <ul class="footer__list">
               <li class="footer__item">
@@ -471,23 +542,33 @@
               </li>
             </ul>
           </div>
-          <div class="footer__menu">
+          <div class="footer__menu col-sm-6">
             <h3 class="footer__menu-title">Follow us</h3>
             <ul class="footer__list flex">
               <li class="footer__item inline">
-                <i class="footer__icon fa-brands fa-pinterest"></i>
+                <a href="" class="footer__link">
+                  <i class="footer__icon fa-brands fa-pinterest"></i
+                ></a>
               </li>
               <li class="footer__item inline">
-                <i class="footer__icon fa-brands fa-youtube"></i>
+                <a href="" class="footer__link">
+                  <i class="footer__icon fa-brands fa-youtube"></i
+                ></a>
               </li>
               <li class="footer__item inline">
-                <i class="footer__icon fa-brands fa-square-facebook"></i>
+                <a href="" class="footer__link">
+                  <i class="footer__icon fa-brands fa-square-facebook"></i
+                ></a>
               </li>
               <li class="footer__item inline">
-                <i class="footer__icon fa-brands fa-twitter"></i>
+                <a href="" class="footer__link">
+                  <i class="footer__icon fa-brands fa-twitter"></i
+                ></a>
               </li>
             </ul>
-            <img class="logo-footer" src="./imgs/logo.png" alt="logo" />
+            <a href="">
+              <img class="logo-footer" src="./imgs/logo.png" alt="logo" />
+            </a>
           </div>
         </div>
         <div class="footer__coppyright flex">
