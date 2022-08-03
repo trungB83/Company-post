@@ -1,4 +1,9 @@
 /* header */
+/* *{
+  transition: all 0.8s;
+
+} */
+
 .header {
   background-color: #f4feff;
 }
@@ -24,7 +29,7 @@
 }
 
 .header__nav-link {
-  padding: 10px 24px;
+  padding: 10px 10px;
   border-radius: 5px;
   font-weight: 600;
   display: block;
@@ -74,10 +79,13 @@
 .main__list-item {
   color: var(--text-color);
   padding-right: 30px;
+  transition: all .2s ease-in-out; 
 }
 
-.main__list-item:hover a {
+.main__list-item:hover {
   color: black;
+  font-weight: bold;
+  transform: scale(1.3);
 }
 
 .nav-main-active {
@@ -98,13 +106,27 @@
   padding-bottom: 6rem;
 }
 
+.post__box:hover .--active {
+  background: gold;
+  transform: scale(1.2);
+}
+
 .post__image {
   border-radius: 10px;
   overflow: hidden;
 }
+
 .post__image img {
   width: 100%;
+  transition: all .2s ease-in-out;
 }
+
+.post__image img:hover {
+  opacity: 0.8;
+  transform: scale(1.3);
+}
+
+
 
 /* --feature */
 .post__feature {
@@ -119,6 +141,7 @@
   font-weight: bold;
   padding: 7px 18px;
   display: none;
+  transition: all .2s ease-in-out; 
 }
 
 .--active {
@@ -138,10 +161,18 @@
   letter-spacing: 3px;
 }
 
+.post__category-name a:hover {
+  text-decoration: underline;
+}
+
 .post__title {
   padding-bottom: 12px;
   font-size: 18px;
   font-weight: 600;
+}
+
+.title__link:hover {
+  text-decoration: underline;
 }
 
 .post__description {
@@ -154,21 +185,23 @@
   font-weight: 600;
   display: inline-block;
   opacity: 1;
+  
 }
+
+
 
 .post__btn:hover a {
   background: #00ff73;
-
   color: white;
-  transition: opacity 0.3s ease-in-out;
+  transform: scale(1.1);
 }
 
 .post__btn a {
-  margin-top: 20px;
   padding: 14px 24px;
   background: var(--primary);
   border-radius: 5px;
   display: block;
+  transition: all .2s ease-in-out;
 }
 
 .block-subcribe-email {
@@ -206,6 +239,10 @@
   border: none;
 }
 
+.input-field:focus-visible{
+  outline: none;
+}
+
 .small-text {
   color: var(--text-color);
   text-align: center;
@@ -232,8 +269,9 @@
 }
 
 .page-switch__btn:hover a {
-  background: #454b52;
+  background: black;
   color: white;
+  transform: scale(1.3);
 }
 
 .page-selected {
@@ -245,6 +283,7 @@
   padding: 10px 12px;
   font-size: 16px;
   font-weight: 600;
+  transition: all .2s ease-in-out;
 }
 
 .drop-box {
@@ -308,13 +347,24 @@
   padding-bottom: 20px;
 }
 
+.footer__item a {
+  color: var(--text-color);
+}
+
+.footer__item a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
 .footer__icon {
   color: white;
   font-size: 20px;
+  transition: all .2s ease-in-out;
 }
 
 .footer__icon:hover {
   color: var(--primary);
+  transform: scale(1.3);
 }
 
 .coppyright,
@@ -348,22 +398,30 @@ input[type=checkbox] {
 .checkbox_icon {
   font-size: 30px;
 }
-nav ul {
-  max-height: 0px;
+.dropdown nav {
+  position: absolute;
+    width: 100%;
+    top: 63px;
+    left: 0;
+}
+
+.dropdown nav ul {
+  max-height: 0 ;
   overflow: hidden;
+  width: 100%;
   list-style: none;
   transition: all 1s cubic-bezier(.325, 1, .22, 1);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 .main__list-mobile-item {
-  border-bottom: .18rem solid white;
   color: #fff;
   font-size: 16px;
+  background-color: #3ae386;
+  height: auto;
   padding: 8px 0;
   display: flex;
   justify-content: center;
-  background: var(--primary);
   border-radius: 5px;
   margin: 5px 5px 0 5px;
 }
@@ -374,29 +432,42 @@ nav li:last-of-type {
 
 nav li a {
   text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  display:block;
 }
 nav li a:hover{
   text-decoration: underline;
+  color: white;
 }
 
 input[type=checkbox]:checked ~ nav ul {
   height: auto;
-  max-height: 15rem;
-  transition: all 1s cubic-bezier(.5, 1, .22, 1);
+  left: 0;
+  top: 8px;
+  width: 100%;
+  position: absolute;
+  background: #3ae386;
+  max-height: 250px;
+  transition: left width 0.5s;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 
 }
-
+.header__navigation-mobile--overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.22);
+}
 .hamburger {
   display: none;
   position: absolute;
-  top: 18px;
-  right: 13px;
+  top: 1%;
+  right: 10%;
   height: 27px;
   width: 27px;
   cursor: pointer;
-  transition: all 1s cubic-bezier(.19, 1, .22, 1);
+  
 }
 
 @media only screen and (min-width: 1200px) {
@@ -413,7 +484,7 @@ input[type=checkbox]:checked ~ nav ul {
   
 }
 
-@media only screen and (max-width:821px) {
+@media only screen and (max-width:897px) {
   /* For tablets: */
   .hide-tablet {
     display: none;
@@ -457,9 +528,17 @@ input[type=checkbox]:checked ~ nav ul {
     max-width: 100%;
     overflow-x: auto;
 }
+.post__description{
+  height: 80px;
+  overflow: hidden;
+}
+
+
+
 .main__list-item a {
   font-size: 20px;
 }
+
 }
 
 /* For mobile phones: */
